@@ -1,7 +1,7 @@
 from tkinter import *
 from tkcalendar import DateEntry
 
-from consulta_principal import construcao_query
+from consulta_gerais import consulta_geral
 
 def imprimir():
     valor_data_inicio = data_inicio.get()
@@ -9,11 +9,9 @@ def imprimir():
     valor_taxa = taxa.get()
     
     if (valor_data_inicio < valor_data_final) & (valor_taxa != ""):
-        construcao_query(valor_data_inicio, valor_data_final, valor_taxa)
+        consulta_geral(valor_data_inicio, valor_data_final, valor_taxa)
     
     
-
-
 janela = Tk()
 janela.title("Automatização CISCO")
 
