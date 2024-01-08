@@ -1,4 +1,4 @@
-from query_data import query_data
+from querys.query_data import query_data
 
 def construcao_query_data(processos):
     try:

@@ -1,4 +1,4 @@
-from query_principal import query_principal
+from querys.query_principal import query_principal
 
 def construcao_query_principal(data_inicio, data_final, taxa):
     try:
